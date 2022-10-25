@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
-
+import Training from "../components/Training";
 
 export default function Home({ products }) {
   return (
@@ -12,13 +12,13 @@ export default function Home({ products }) {
       </Head>
 
       <Header />
+      <Training />
 
       <main className="max-w-screen-2xl mx-auto">
         {/* Banner */}
 
         <Banner />
         <ProductFeed products={products} />
-        
 
         {/* ProductFeed */}
       </main>
